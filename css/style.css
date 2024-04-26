@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #1e202b;
+    color: #bfc1c8;
+    font-size: 14px;
+    font-family: "Roboto", "Open Sans", sans-serif;
+   
+}
+h2{
+    font-size: 80px;
+    font-weight: 700;
+}
+.form-control::placeholder {
+    color: #6a6b6e;
+    opacity: 1
+    
+}
+
+nav .collapse .navbar-nav .cover-home {
+   
+    border: solid 2px #009ad8 ;
+    color: #009ad8;
+   
+}
+.hero{
+    background-image: url(../images/banner.png);
+   background-position: center ;
+   background-size: cover;
+   height: 50vh;
+   overflow: auto;
+    
+}
+.hero input[type="text"]{
+    background-color: #1e202b;
+}
+.hero button{
+    top: 11%;
+    right: 20px;
+    padding: 10px 40px;
+}
+.bgColor-card div {
+    background: #323544;
+    color: #bfc1c8;
+}
+.bgColor-card .top1{
+    color: #bfc1c8 ;
+    background-color: rgba(0, 0, 0, 0.1)
+   
+}
+.bgColor-card{
+    top: 26%;
+    left:28%;
+    transform: translate(-20%, 20%);
+}
+
+.bgColor-card div.color1:nth-child(even){
+    background-color: #262936; 
+}
+.card-body .custom {
+    color: #009ad8;
+    margin: 20px 0;
+}

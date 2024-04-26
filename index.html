@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-5 navs">
+        <div class="container px-0 py-0">
+            <a class="navbar-brand  m-auto text-center " href="#">
+                <img class=" w-75 " src="./images/logo@2x.png" alt="" srcset="">
+            </a>
+            <div>
+                <h1 class="text-white fs-5">Weather</h1>
+                <small class="text-white">tagline goes here</small>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto mb-2 ">
+                    <a class="nav-link active px-4  fs-6 cover-home rounded-pill  " aria-current="page"
+                        href="#">Home</a>
+                    <a class="nav-link  px-4 fs-6 text-white inhover" href="#">News</a>
+                    <a class="nav-link  px-4 fs-6 text-white inhover" href="#">Live Cameras</a>
+                    <a class="nav-link  px-4 fs-6 text-white inhover" href="#">Photoes</a>
+                    <a class="nav-link  px-5 fs-6 text-white  inhover" aria-disabled="true">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="hero ">
+
+        <div class="mt-5 container w-75 position-relative ">
+            <input type="text" class="form-control text-white py-3 rounded-5 shadow-none border-0" id="searchInput"
+                placeholder="Find your location...">
+            <button type="button" class="btn btn-primary rounded-pill  position-absolute ">Find</button>
+        </div>
+
+        <div class="card-group container  w-75 mt-5 position-absolute   bgColor-card ">
+            <!-- today -->
+            <div class="card mt-4 ">
+                <div class="card-footer top1 d-flex justify-content-between align-items-center ">
+                    <p id="todayName">Wednesday</p>
+                   <p> <span id="todayNumber">24</span> 
+                     <span id="todayMonth">April</span></p>
+                </div>
+                <div class="card-body p-4 ">
+                    <h5 id="todayLocation">Cairo</h5>
+                    <div class="card-text text-white d-flex justify-content-between">
+                        <h2 id="todayTemp">25
+                            <sup>o</sup>
+                            c
+                        </h2>
+                        <div class="w-25"><img id="todayConditionImg" src="./images/113.webp" class="w-100" alt="" srcset=""></div>
+                    </div>
+                    <div class="custom" id="todayConditionText">Clear</div>
+                    <div >
+                        <span class="px-0">
+                            <img src="./images/icon-umberella.png" alt="">
+                          <span id="humidity">  20%</span>
+                        </span>
+                        <span class="px-3">
+                            <img src="./images/icon-wind.png" alt="">
+                            <span id="wind">18km/h</span>
+                        </span>
+                        <span class="px-3">
+                            <img src="./images/icon-compass.png" alt="">
+                           <span id="windDirection"> East</span>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- tomorrow -->
+            <div class="card mt-4 color1">
+                <div class="card-footer top1 ">
+                    <p class="text-center nextDay">Thursday</p>
+                </div>
+                <div class="card-body color1 text-center">
+                    <img class="nextConditioningImg" src="./images/116.webp" alt="" srcset="">
+                    <h3 class="nextMaxTemp card-title text-white m-2">36.8 <sup>o</sup> c</h3>
+                    <p class="nextMinTemp card-text m-3">21.8 <sup>o</sup> c</p>
+                    <p class="nextConditioningText custom ">Partly Cloudy</p>
+                </div>
+
+            </div>
+            <!-- nextday -->
+            <div class="card mt-4 color1">
+                <div class="card-footer top1 ">
+                    <p class="text-center  nextDay">Friday</p>
+                </div>
+                <div class="card-body text-center">
+                    <img class="nextConditioningImg"  src="./images/176.webp" alt="" srcset="">
+                    <h3 class="nextMaxTemp card-title text-white m-2">31.8 <sup>o</sup> c</h3>
+                    <p class="nextMinTemp card-text m-3">19.8 <sup>o</sup> c</p>
+                    <p class="nextConditioningText custom ">Patchy rain nearby</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
