@@ -20,7 +20,7 @@ let searchInput = document.getElementById("searchInput")
 
 //fetch API data
 async function getWeatherData(cityName){
-let dataWeather = await fetch (`http://api.weatherapi.com/v1/forecast.json?key=d9ecb7096923439baa0142454242504&q=${cityName}&days=3`)
+let dataWeather = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d9ecb7096923439baa0142454242504&q=${cityName}&days=3`)
 let response = await dataWeather.json()
 return response
 }
